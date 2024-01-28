@@ -33,11 +33,8 @@ public class NumberPlay {
 			rev_no = rev_no*10 + num%10;
 			num = num/10;
 		}
-		
 		return rev_no;
-		
 	}
-	
 	public static int diffOfTwo(int num) {
 		
 		String noStr = Integer.toString(num);
@@ -47,7 +44,6 @@ public class NumberPlay {
 			int digit2 = Character.getNumericValue(noStr.charAt(i+1));
 			int diff = Math.abs(digit1 - digit2);
 			result+=diff;
-			
 		}
 		return result;
 	}
